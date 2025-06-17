@@ -1,0 +1,15 @@
+av
+torchinfo
+pytorch-lightning>=2.0.0
+pandas
+h5py
+sox
+soundfile
+torch==2.5.0+cu118  
+torchvision==0.20.0+cu118
+torchaudio==2.5.0+cu118
+tqdm
+transformers
+scikit-learn
+wandb
+nni

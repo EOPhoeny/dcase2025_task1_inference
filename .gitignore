@@ -1,0 +1,10 @@
+.vscode/
+__pycache__
+cache
+wandb/
+split_setup/
+*.egg-info
+*.ckpt
+*.pth
+*.pt
+output.csv
