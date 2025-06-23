@@ -14,20 +14,20 @@ Follow the steps below to prepare and test your DCASE 2025 Task 1 inference subm
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/CPJKU/dcase2025_task1_inference
+git clone https://github.com/EOPhoeny/dcase2025_task1_inference
 cd dcase2025_task1_inference
 ```
 
-2. Rename the package (`Schmid_CPJKU_task1`) using your official submission label (see [here](https://dcase.community/challenge2024/submission#submission-label) for informations on how to form your submission label).
-3. Rename the module (`Schmid_CPJKU_task1_1` inside package) using your submission label + the submission index (`1` in the example). You may submit up to four modules with increasing submission index (`1` to `4`).
-4. Create a Conda environment: `conda create -n d25_t1_inference python=3.13`. Activate your conda environment.
-5. Install your package locally `pip install -e .`. Don't forget to adapt the `requirements.txt` file later on if you add additional dependencies.
+2. Rename the package (`Zhang_AITHU_SJTU_task1`) using your official submission label (see [here](https://dcase.community/challenge2024/submission#submission-label) for informations on how to form your submission label).
+3. Rename the module (`Zhang_AITHU_SJTU_task1` inside package) using your submission label + the submission index (`1` in the example). You may submit up to four modules with increasing submission index (`1` to `4`).
+4. Create a Conda environment: `conda create -n d25_t1_inference python=3.10`. Activate your conda environment.
+5. Install your package locally `pip install -e .`. Don't forget to adapt the `requirements.txt` file later on if you add additional dependencies. You might need `--extra-index-url https://download.pytorch.org/whl/cu118`.
 6. Implement your submission module(s) by defining the required API functions (see above). 
 7. Verify that your models comply with the complexity limits (MACs, Params):
 
 ```python test_complexity.py --submission_name <submission_label> --submission_index <submission_number>```
 
-8. Download the evaluation set (to be released on June 1st). 
+8. Download the evaluation set. 
 9. Evaluate your submissions on the test split and generate evaluation set predictions:
 ```
 python evaluate_submission.py \
