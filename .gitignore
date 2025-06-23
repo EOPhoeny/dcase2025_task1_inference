@@ -5,6 +5,6 @@ wandb/
 split_setup/
 *.egg-info
 # *.ckpt
-*.pth
+# *.pth
 *.pt
 output.csv
