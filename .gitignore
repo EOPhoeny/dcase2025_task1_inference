@@ -4,7 +4,7 @@ cache
 wandb/
 split_setup/
 *.egg-info
-*.ckpt
+# *.ckpt
 *.pth
 *.pt
 output.csv
